@@ -19,4 +19,22 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <CheckBox
+        android:id="@+id/SettingSdeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/SettingSpeed"
+        app:layout_constraintStart_toStartOf="@+id/theme"
+        app:layout_constraintTop_toBottomOf="@+id/theme" />
+
+    <CheckBox
+        android:id="@+id/SettingHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/SettingHumidity"
+        app:layout_constraintStart_toStartOf="@+id/SettingSdeed"
+        app:layout_constraintTop_toBottomOf="@+id/SettingSdeed" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

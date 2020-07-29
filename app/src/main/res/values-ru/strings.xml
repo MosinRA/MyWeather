@@ -12,4 +12,7 @@
     <string name="Saturday">Суббота</string>
     <string name="Sunday">Воскрессенье</string>
     <string name="NightTheme">Ночная тема</string>
+    <string name="SettingSpeed">Скорость ветра</string>
+    <string name="SettingHumidity">Влажность воздуха</string>
+
 </resources>

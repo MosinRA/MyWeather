@@ -11,5 +11,7 @@
     <string name="Saturday">Saturday</string>
     <string name="Sunday">Sunday</string>
     <string name="NightTheme">Night Theme</string>
+    <string name="SettingSpeed">wind speed</string>
+    <string name="SettingHumidity">Humidity</string>
 
 </resources>
