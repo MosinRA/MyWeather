@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rainbg"
+    android:backgroundTint="#9CCAC7C7">
+
+    <ImageView
+        android:id="@+id/icoWeather"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/rain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="17dp"
+        android:text="@string/city"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/icoWeather"
+        app:layout_constraintTop_toTopOf="@+id/icoWeather"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/SerchCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:hint="@string/find"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icoWeather"
+        app:layout_constraintStart_toEndOf="@+id/icoWeather"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/dayMonday"
+        android:layout_width="153dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/Monday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/icoWeather"
+        app:layout_constraintTop_toBottomOf="@+id/icoWeather" />
+
+    <TextView
+        android:id="@+id/dayTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Tuesday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dayMonday"
+        app:layout_constraintTop_toBottomOf="@+id/dayMonday" />
+
+    <TextView
+        android:id="@+id/DayWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Wednesday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dayTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/dayTuesday" />
+
+    <TextView
+        android:id="@+id/daySaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Saturday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dayFriday"
+        app:layout_constraintTop_toBottomOf="@+id/dayFriday" />
+
+    <TextView
+        android:id="@+id/dayThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Thursday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/DayWednesday"
+        app:layout_constraintTop_toBottomOf="@+id/DayWednesday" />
+
+    <TextView
+        android:id="@+id/dayFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:text="@string/Friday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/dayMonday"
+        app:layout_constraintTop_toTopOf="@+id/dayMonday" />
+
+    <TextView
+        android:id="@+id/daySunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Sunday"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/daySaturday"
+        app:layout_constraintTop_toBottomOf="@+id/daySaturday" />
+
+    <ImageView
+        android:id="@+id/icoSetting"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="350dp"
+        android:src="@drawable/setting"
+        app:layout_constraintBottom_toBottomOf="@+id/dayThursday"
+        app:layout_constraintStart_toEndOf="@+id/dayThursday" />
+
+    <Button
+        android:id="@+id/changeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:text="@string/chengeTemp"
+        app:layout_constraintStart_toEndOf="@+id/temperature"
+        app:layout_constraintTop_toTopOf="@+id/temperature" />
+</androidx.constraintlayout.widget.ConstraintLayout>
