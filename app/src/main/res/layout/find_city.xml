@@ -126,8 +126,8 @@
         android:id="@+id/icoSetting"
         android:layout_width="51dp"
         android:layout_height="46dp"
-        android:layout_marginStart="344dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/setting"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temperature3" />
@@ -140,6 +140,4 @@
         android:src="@drawable/enter"
         app:layout_constraintStart_toEndOf="@+id/SerchCity"
         app:layout_constraintTop_toTopOf="@+id/SerchCity" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">MyWeather</string>
     <string name="city"> Сургут</string>
-    <string name="temp">+30C° </string>
+    <string name="temp">30</string>
     <string name="find">Найти Ваш город</string>
     <string name="Monday">Понедельник</string>
     <string name="Tuesday">Вторник</string>
@@ -14,5 +14,6 @@
     <string name="NightTheme">Ночная тема</string>
     <string name="SettingSpeed">Скорость ветра</string>
     <string name="SettingHumidity">Влажность воздуха</string>
-
+    <string name="chengeTemp">Изменить температуру</string>
+    <string name="chengingTemp">Температура изменена на </string>
 </resources>

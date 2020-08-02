@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyWeather</string>
     <string name="city"> Surgut</string>
-    <string name="temp">+90F°</string>
+    <string name="temp">90</string>
     <string name="find">Find your city</string>
     <string name="Monday">Monday</string>
     <string name="Tuesday">Tuesday</string>
@@ -13,5 +13,6 @@
     <string name="NightTheme">Night Theme</string>
     <string name="SettingSpeed">wind speed</string>
     <string name="SettingHumidity">Humidity</string>
-
+    <string name="chengeTemp">Change the temperature</string>
+    <string name="chengingTemp">Temperature change to </string>
 </resources>
