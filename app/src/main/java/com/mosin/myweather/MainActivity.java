@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         infoCityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://ru.wikipedia.org/wiki/" + textViewCity.getText().toString());
+                Uri uri = Uri.parse("https://wikipedia.org/wiki/" + textViewCity.getText().toString());
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
