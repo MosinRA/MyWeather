@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rainbgn"
-
     android:backgroundTint="#92989595"
     tools:context=".MainActivity">
 
@@ -32,19 +31,6 @@
         app:layout_constraintTop_toTopOf="@+id/icoWeather"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/SerchCity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:ems="10"
-        android:hint="@string/find"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/icoWeather"
-        app:layout_constraintStart_toStartOf="@+id/icoWeather" />
-
     <TextView
         android:id="@+id/temperature"
         android:layout_width="wrap_content"
@@ -62,7 +48,7 @@
         android:id="@+id/dayMonday"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="@string/Monday"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
@@ -145,10 +131,33 @@
         app:layout_constraintTop_toBottomOf="@+id/daySaturday" />
 
     <Button
-        android:id="@+id/changeBtn"
+        android:id="@+id/findCityBtn"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="@string/chengeTemp"
-        app:layout_constraintStart_toStartOf="@+id/icoWeather"
-        app:layout_constraintTop_toBottomOf="@+id/temperature" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/find_city"
+        app:layout_constraintBottom_toTopOf="@+id/icoWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/infoCity"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/info_about_city"
+        app:layout_constraintStart_toEndOf="@+id/dayTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/findCityBtn" />
+
+    <Button
+        android:id="@+id/yandex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/weather_on_y_andex"
+        app:layout_constraintStart_toStartOf="@+id/infoCity"
+        app:layout_constraintTop_toBottomOf="@+id/infoCity" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

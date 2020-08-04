@@ -13,6 +13,7 @@
     <string name="NightTheme">Night Theme</string>
     <string name="SettingSpeed">wind speed</string>
     <string name="SettingHumidity">Humidity</string>
-    <string name="chengeTemp">Change the temperature</string>
-    <string name="chengingTemp">Temperature change to </string>
+    <string name="find_city">Serch your city</string>
+    <string name="info_about_city">Info about City</string>
+    <string name="weather_on_y_andex">Weather on yandex</string>
 </resources>

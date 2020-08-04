@@ -14,6 +14,7 @@
     <string name="NightTheme">Ночная тема</string>
     <string name="SettingSpeed">Скорость ветра</string>
     <string name="SettingHumidity">Влажность воздуха</string>
-    <string name="chengeTemp">Изменить температуру</string>
-    <string name="chengingTemp">Температура изменена на </string>
+    <string name="find_city">Найти Ваш город</string>
+    <string name="info_about_city">Информация о городе</string>
+    <string name="weather_on_y_andex">Погода на Яндексе</string>
 </resources>
