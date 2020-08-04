@@ -30,18 +30,15 @@
         app:layout_constraintTop_toTopOf="@+id/icoWeather"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/SerchCity"
+    <Button
+        android:id="@+id/findCityBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:ems="10"
-        android:hint="@string/find"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
+        android:text="@string/find_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toEndOf="@+id/city"
-        app:layout_constraintTop_toTopOf="@+id/city" />
+        app:layout_constraintTop_toTopOf="@+id/icoWeather" />
 
     <TextView
         android:id="@+id/temperature"
@@ -143,11 +140,23 @@
         app:layout_constraintStart_toEndOf="@+id/dayThursday" />
 
     <Button
-        android:id="@+id/changeBtn"
+        android:id="@+id/infoCity"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/info_about_city"
+        app:layout_constraintStart_toEndOf="@+id/temperature"
+        app:layout_constraintTop_toBottomOf="@+id/findCityBtn" />
+
+    <Button
+        android:id="@+id/yandex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:text="@string/chengeTemp"
-        app:layout_constraintStart_toEndOf="@+id/temperature"
-        app:layout_constraintTop_toTopOf="@+id/temperature" />
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/weather_on_y_andex"
+        app:layout_constraintStart_toEndOf="@+id/infoCity"
+        app:layout_constraintTop_toBottomOf="@+id/findCityBtn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
