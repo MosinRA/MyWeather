@@ -19,11 +19,11 @@
     <string name="empty_list" translatable="false">empty_list</string>
 
     <string-array name="city_names">
-        <item>Сургут</item>
-        <item>Самара</item>
-        <item>Москва</item>
-        <item>Таганрог</item>
-        <item>Уфа</item>
+        <item>Surgut</item>
+        <item>Samara</item>
+        <item>Moscow</item>
+        <item>Taganrog</item>
+        <item>Ufa</item>
     </string-array>
 
     <integer-array name="weather_imgs">
