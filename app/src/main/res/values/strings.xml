@@ -16,4 +16,21 @@
     <string name="find_city">Serch your city</string>
     <string name="info_about_city">Info about City</string>
     <string name="weather_on_y_andex">Weather on yandex</string>
+    <string name="empty_list" translatable="false">empty_list</string>
+
+    <string-array name="city_names">
+        <item>Сургут</item>
+        <item>Самара</item>
+        <item>Москва</item>
+        <item>Таганрог</item>
+        <item>Уфа</item>
+    </string-array>
+
+    <integer-array name="weather_imgs">
+        <item>@drawable/suno</item>
+        <item>@drawable/suno</item>
+        <item>@drawable/suno</item>
+        <item>@drawable/suno</item>
+        <item>@drawable/suno</item>
+    </integer-array>
 </resources>
