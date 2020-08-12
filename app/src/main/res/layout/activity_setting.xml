@@ -9,7 +9,7 @@
     tools:context=".Setting">
 
     <Switch
-        android:id="@+id/theme"
+        android:id="@+id/themeSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -22,21 +22,21 @@
         tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/SettingSdeed"
+        android:id="@+id/settingsSpeedSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/SettingSpeed"
-        app:layout_constraintStart_toStartOf="@+id/theme"
-        app:layout_constraintTop_toBottomOf="@+id/theme" />
+        app:layout_constraintStart_toStartOf="@+id/themeSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/themeSwitch" />
 
     <CheckBox
-        android:id="@+id/SettingHumidity"
+        android:id="@+id/settingHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/SettingHumidity"
-        app:layout_constraintStart_toStartOf="@+id/SettingSdeed"
-        app:layout_constraintTop_toBottomOf="@+id/SettingSdeed" />
+        app:layout_constraintStart_toStartOf="@+id/settingsSpeedSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/settingsSpeedSwitch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,26 +10,24 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-
 import java.util.Objects;
 
 public class FragmentChoiceCity extends Fragment {
-
     private ListView cityNameListView;
     private TextView emptyTextView;
     private boolean isExistCoatOfCity;
     private int currentPosition = 0;
-//    private TextView setCity;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       return inflater.inflate(R.layout.fragment_choci_city, container, false);
+        return inflater.inflate(R.layout.fragment_choce_city, container, false);
     }
 
     @Override
@@ -37,24 +35,20 @@ public class FragmentChoiceCity extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initViews(view);
         initList();
-//        findView(view);
     }
-
-//    private void findView(@NonNull View view){
-//        setCity = view.findViewById(R.id.cityName);
-//    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
         isExistCoatOfCity = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
-            if (savedInstanceState != null){
-                currentPosition = savedInstanceState.getInt("CurrentCity", 0);
-            }
-            if (isExistCoatOfCity) {
-                cityNameListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-            }
+        if (savedInstanceState != null) {
+            currentPosition = savedInstanceState.getInt("CurrentCity", 0);
+        }
+        if (isExistCoatOfCity) {
+            cityNameListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+            showCity();
+        }
     }
 
     @Override
@@ -63,12 +57,12 @@ public class FragmentChoiceCity extends Fragment {
         super.onSaveInstanceState(outState);
     }
 
-    public void initViews(View view){
+    public void initViews(View view) {
         cityNameListView = view.findViewById(R.id.city_name_list_view);
         emptyTextView = view.findViewById(R.id.cities_list_empty_view);
     }
 
-    public void initList(){
+    public void initList() {
         ArrayAdapter adapter = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()), R.array.city_names,
                 android.R.layout.simple_list_item_activated_1);
         cityNameListView.setAdapter(adapter);
@@ -81,22 +75,17 @@ public class FragmentChoiceCity extends Fragment {
             }
         });
     }
-//не успел разобраться с этим блоком кода, продолжу работу!
+
     private void showCity() {
         if (isExistCoatOfCity) {
             cityNameListView.setItemChecked(currentPosition, true);
             FragmentShowCity detail = (FragmentShowCity)
                     Objects.requireNonNull(getFragmentManager()).findFragmentById(R.id.show_city);
-
             if (detail == null || detail.getIndex() != currentPosition) {
-//                String[] citiesNames = getResources().getStringArray(R.array.city_names);
-//                setCity.setText(citiesNames[detail.getIndex()].toString());
-
                 detail = FragmentShowCity.create(getCoatContainer());
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.show_city, detail);
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-                ft.addToBackStack("Some_Key");
                 ft.commit();
             }
         } else {

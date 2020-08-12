@@ -10,15 +10,15 @@
         android:id="@+id/weatherIco"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/suno" />
 
     <TextView
-        android:id="@+id/CityName"
+        android:id="@+id/cityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -29,14 +29,14 @@
         app:layout_constraintTop_toTopOf="@+id/weatherIco" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/show_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/temp"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/CityName"
-        app:layout_constraintTop_toBottomOf="@+id/CityName" />
+        app:layout_constraintStart_toStartOf="@+id/cityName"
+        app:layout_constraintTop_toBottomOf="@+id/cityName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

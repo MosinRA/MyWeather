@@ -33,4 +33,12 @@
         <item>@drawable/suno</item>
         <item>@drawable/suno</item>
     </integer-array>
+
+    <string-array name="temps">
+        <item>30</item>
+        <item>10</item>
+        <item>11</item>
+        <item>15</item>
+        <item>25</item>
+    </string-array>
 </resources>

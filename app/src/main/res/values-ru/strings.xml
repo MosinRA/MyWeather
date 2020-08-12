@@ -17,11 +17,20 @@
     <string name="find_city">Найти Ваш город</string>
     <string name="info_about_city">Информация о городе</string>
     <string name="weather_on_y_andex">Погода на Яндексе</string>
+
     <string-array name="city_names">
         <item>Сургут</item>
         <item>Самара</item>
         <item>Москва</item>
         <item>Таганрог</item>
         <item>Уфа</item>
+    </string-array>
+
+    <string-array name="temps">
+        <item>30</item>
+        <item>10</item>
+        <item>11</item>
+        <item>15</item>
+        <item>25</item>
     </string-array>
 </resources>
